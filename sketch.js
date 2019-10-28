@@ -1,6 +1,6 @@
 let input, submit, result;
 
-const rnn = ml5.charRNN("models/women/", () => {
+const rnn = ml5.charRNN("models/coverletters/", () => {
     console.log('model loaded');
 
     input = document.querySelector('input');
