@@ -18,7 +18,7 @@ const generateText = () => {
 
     const options = {
         seed: seed,
-        length: 200,
+        length: 50,
         temperature: 0.75
     }
 
