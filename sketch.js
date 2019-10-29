@@ -1,6 +1,6 @@
 let input, submit, result;
 
-const rnn = ml5.charRNN("models/coverletters/", () => {
+const rnn = ml5.charRNN("models/women/", () => {
     console.log('model loaded');
 
     input = document.querySelector('input');
@@ -18,8 +18,8 @@ const generateText = () => {
 
     const options = {
         seed: seed,
-        length: 50,
-        temperature: 0.75
+        length: 200,
+        temperature: 0.5
     }
 
     rnn.generate(options, (err, results) => {
